@@ -4,3 +4,12 @@ body{
 .errorlist{
     color: red;
 }
+
+element.style {
+.btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #0d6efd;
+}
+
+}

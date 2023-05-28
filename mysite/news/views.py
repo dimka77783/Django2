@@ -63,7 +63,7 @@ class HomeNews(MyMixin, ListView):
     model = News
     template_name = 'news/home_news_list.html'
     context_object_name = 'news'
-    mixin_prop = 'hello world'
+    mixin_prop = 'Список новостей'
     paginate_by = 2
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -95,7 +95,7 @@ class NewsByCategory(MyMixin, ListView):
 class ViewNews(DetailView):
     model = News
     context_object_name = 'news_item'
-    # template_name = 'news/news_detail.html'
+    template_name = 'news/news_detail.html'
     # pk_url_kwarg = 'news_id'
 
 
